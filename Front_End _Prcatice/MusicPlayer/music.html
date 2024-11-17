@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="music.css">
+    
+    <link rel="shortcut icon" href="#">
+</head>
+<body>
+    <div class="header">
+       <p><b>Music System</b></p> 
+       
+    </div>
+<!-- <div class="checkBoxDiv">
+  <input type="checkbox" class="checkbox" id="checkbox">
+  <label for="checkbox" class="checkbox-label">
+    <i class="fas fa-moon"></i>
+    <i class="fas fa-sun"></i>
+    <span class="ball"></span>
+  </label>
+    </div> -->
+    <div id="checkbox">
+        <button id="theme-toggle">Toggle Theme</button>
+    </div>
+    
+
+    <div class="body-main">
+        
+        <div class="left">
+            
+            <label for="dropdownName" style="font-size: 20px; font-weight: bold;">Filter Music</label>
+            <select  name="dropdown" id="dropdown">
+                <option value="All">All</option>
+                <option value="Pop">Pop</option>
+                <option value="Rock">Rock</option>
+            </select>
+            <br><br><br> 
+            <h1>Display Songs</h1>
+            <br>
+            <div class="music-List">
+            </div>
+
+
+        </div>
+        <div class="middle">
+            <div class="middle-main" id="middlemain">
+               // <img src="https://www.shreyaghoshal.com/assest/images/shreya-image.png" alt="">
+                <p class="songname">Teri Ore</p>
+                <p class="author">Shreya Ghoshal</p>
+            </div>
+            <div class="middle-audio" id="middleaudio">
+                <audio controls>
+                    <source src="Audio2.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                    </audio>
+                    <div class="controls">
+                        <button id="prevBtn">Prev</button>
+                        <button id="playPauseBtn">Play</button>
+                        <button id="nextBtn">Next</button>
+                    </div>
+                    
+            </div>
+
+            <div><button class="addtoplay"> Add to PlayList</button></div>
+           
+            
+        </div>
+        <!-- <div class="right">
+            <div class="playlist-add">
+                <input type="text" placeholder="Enter PlayList Name" class="Input-List" id="InputList">
+                <button class="List-btn" id="Listbtn">Create PlayList</button>
+            </div>
+            <div class="playlists">
+                <button id="toggleCurrentPlaylist">Current Playlist</button>
+                <ul class="currentPlayList" style="display: block;"></ul>
+
+                <button id="toggleAllPlaylists">All Playlists</button>
+                <ul class="allPlaylists" style="display: block;"></ul>
+            </div>
+        </div>
+    </div> -->
+
+    <div id="playlist-section">
+        <header>
+            <h1>My Playlists</h1>
+            <button id="create-playlist-button">Create New Playlist</button>
+        </header>
+        <div id="playlists-container">
+            <!-- Existing playlists will be displayed here -->
+        </div>
+    </div>
+
+    <!-- Create Playlist Modal -->
+    <div id="create-playlist-modal" class="modal">
+        <div class="modal-content">
+            <span id="close-modal">&times;</span>
+            <h2>Create New Playlist</h2>
+            <form id="create-playlist-form">
+                <label for="playlist-title">Title:</label>
+                <input type="text" id="playlist-title" required>
+                <label for="playlist-description">Description:</label>
+                <!-- <textarea id="playlist-description"></textarea> -->
+                <button type="submit">Save</button>
+                <button type="button" id="cancel-create">Cancel</button>
+            </form>
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/4a8debace1.js" crossorigin="anonymous"></script>
+    <script src="music.js"></script>
+</body>
+</html>

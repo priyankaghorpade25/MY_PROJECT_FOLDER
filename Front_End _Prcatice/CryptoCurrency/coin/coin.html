@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coin Details</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="left-nav">
+            <a href="/" class="title">Crypto Tracker</a>
+        </div>
+        
+        <ul class="nav-links">
+            <li> <a herf="#">Home</a></li>
+            <li><a href="./Favourites/favorites.html">Favourites</a></li>
+            <li>
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" id="search-bar" name="search" placeholder="Search">
+            </li>
+           
+        </ul>
+
+    </nav>
+    <main>
+        <section class="container " id="coin-container">
+            <section class="sidebar">
+                <img id="coin-image" src="" alt="coin image">
+                <h3 class="heading" id="coin-name"></h3>
+                <p id="coin-description"></p>
+                <div id="market-data" >
+                    <div class="market-data-item">
+                        <div class="heading">Rank:</div>
+                        <div id="coin-rank"></div>
+                    </div>
+                    <div class="market-data-item">
+                        <div class="heading">Current Price:</div>
+                        <div id="coin-price"></div>
+                    </div>
+                    <div class="market-data-item">
+                        <div class="heading">Market Cap:</div>
+                        <div id="coin-cap"></div>
+                    </div>
+
+                </div>
+
+            </section>
+            <section id="chart-section">
+                <div class="button-container">
+                    <button id="24h" >24h</button>
+                    <button id="30d" >30d</button>
+                    <button id="3m">3m</button>
+                </div>
+                <canvas id="coin-chart"></canvas>
+
+            </section>
+
+        </section>
+
+
+
+
+        <section id="loader-container"></section>
+            <section id="loader"></section>
+        </section>
+    </main>
+    <script src="coin.js"></script>
+    
+    
+    
+</body>
+</html>

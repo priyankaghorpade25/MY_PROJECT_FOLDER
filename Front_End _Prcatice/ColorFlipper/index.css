@@ -1,0 +1,24 @@
+
+.container{
+    text-align: center;
+}
+#bg-colorname{
+    background-color: rgb(222, 157, 228);
+
+    margin-bottom: 10rem;
+    margin-left: 10rem;
+    margin-right: 10rem;
+    height:2rem;
+    /*width:10rem; */
+    text-align: center;
+    border:0.2rem solid rgb(239, 232, 240)
+    
+}
+#clickButton{
+    border-radius: 2rem;
+    height:4rem;
+    width:10rem;
+    border-color: white;
+    
+}
+

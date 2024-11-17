@@ -1,0 +1,50 @@
+#headline{
+    text-align:center;
+    font-weight: bold;;
+    
+}
+.container{
+    display:flex;
+    justify-Content:space-evenly;
+}
+.field div{
+    margin-top:2rem;
+    display:flex;
+    justify-content:space-between;
+}
+#buttonContainer{
+    margin-top:2rem;
+}
+#list span{
+    
+    font-size: 1.5rem;
+    
+}
+#list{
+   
+    margin-top:2rem;
+    
+}
+.Resstyle{
+    font-weight: bold;
+    background-color: green;
+    color:white;
+    font-size:2rem;
+} 
+.forwhite{
+    background-color:white;
+    margin-left:2rem;
+    margin-right:2rem;
+    margin-top:1rem;
+    margin-bottom:1rem;
+    
+    
+}
+.forgray{
+    background-color: gray;
+    margin-left:2rem;
+    margin-right:2rem;
+    margin-top:1rem;
+    margin-bottom:1rem;
+    
+}

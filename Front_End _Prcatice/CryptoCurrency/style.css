@@ -1,0 +1,197 @@
+*{
+    font-family: "Montserrat", sans-serif;
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+.navbar{
+    display:flex;
+    justify-content: space-between;
+    height:86px;
+    border-bottom: 1px,solid,white;
+    align-items: center;
+    position :fixed;
+    left:0;
+    right:0;
+    top:0;
+    z-index: 1000;
+    background-color: white;
+    padding:0px, 20px;
+
+}
+.title{
+    color:gold;
+    font-weight: 700;
+    text-decoration: none;
+    padding-left: 60px;
+}
+.nav-links{
+    display:flex;
+    align-items: center;
+    gap: 60px;
+    text-decoration: none;
+    list-style: none;
+
+}
+.nav-links a{
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    
+}
+
+#search-bar{
+    background-color: white;
+    border: none;
+    outline: none;
+}
+main{
+    margin-top: 120px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+table{
+    width:95%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+th ,td{
+    border:1px solid rgb(167, 161, 161);
+    padding:10px;
+    text-align: center;
+
+}
+th{
+    background-color: rgb(238, 238, 238);
+}
+tr:hover{
+    background-color: rgb(238, 238, 238);;
+    cursor: pointer;
+}
+#pagination-control{
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    margin-top: 24px;
+    width:95%;
+    
+}
+.btn{
+    padding:13px;
+    border:none;
+    background-color: gold;
+    border-radius: 8px;
+    cursor: pointer;
+    width:120px;
+    font-weight: bold;
+}
+
+    /* HTML: <div class="loader"></div> */
+#loader {
+  width: 50px;
+  padding: 8px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: gold;
+  --_m: 
+    conic-gradient(#0000 10%,#000),
+    linear-gradient(#000 0 0) content-box;
+  -webkit-mask: var(--_m);
+          mask: var(--_m);
+  -webkit-mask-composite: source-out;
+          mask-composite: subtract;
+  animation: l3 1s infinite linear;
+}
+@keyframes l3 {to{transform: rotate(1turn)}}
+
+
+
+
+
+
+.container{
+    display:flex;
+    width:100%;
+}
+.sidebar{
+    width:30%;
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    padding:20px;
+    box-sizing:border-box;
+    margin:0 50px;
+}
+#chart-section{
+    width:70%;
+    padding:20px;
+    box-sizing:border-box;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+.button-container{
+    display:flex;
+    justify-content:space-between;
+    margin-bottom:20px;
+
+}
+.button-container button{
+    margin: 0 10px;
+    padding: 10px 20px;
+    font-size:16px;
+    cursor:pointer;
+    background-color: rgb(211, 209, 196);
+    border:none;
+    border-radius:5px;
+    transition:background-color 0.3s ease;
+}
+.button-container button:hover{
+    background-color: gold;
+    color:white;
+}
+
+.heading{
+    font-weight: bold;
+    margin:20px;
+}
+.description{
+    width:100%;
+    padding:25px;
+    padding-bottom:15px;
+    padding-top:0;
+    text-align:justify;
+
+}
+.market-data{
+    align-self: flex-start;
+    padding:25px;
+    padding-bottom:20px;
+    width:100%
+}
+.market-data-item{
+    display:flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    margin: 20px;
+    align-items: center;
+}
+
+
+#favorite-icon {
+    cursor: pointer; /* Adjust the size as needed */
+    
+
+}
+
+.favorite{
+     
+    color: gold; 
+    
+   
+
+}
+
+

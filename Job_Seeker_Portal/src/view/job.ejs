@@ -1,0 +1,29 @@
+<div class="container mt-1 w-10"></div>
+    <h2 class="mb-4">Job Openings</h2>
+    
+    <%jobs.forEach(job=>{%>
+        <div class="card job-card">
+            <div class="card-body">
+                <h5 class="card-text"><strong>Category:</strong><%=job.category%></h5>
+                <h6 class="card-text"><strong>Designation:</strong><%=job.designation%></h6>
+                <p class="card-text"><strong>Company Name:</strong><%=job.companyName%></p>
+                <p class="card-text"><strong>Salary:</strong><%=job.salary%></p>
+                <p class="card-text"><strong>Positions:</strong><%=job.positions%></p>
+                <p class="card-text"><strong>Skills:</strong><%=job.skills%></p>
+                <p class="card-text"><strong>ApplyBy:</strong><%=job.applyBy%></p>
+                <td>
+                    <a href="/update/<%= job.id %>" class="btn btn-warning">Update</a>
+                    <!-- <button class="btn btn-danger" onclick="deleteProduct('1')">Delete</button> -->
+                    <a href="/delete/<%= job.id %>" class="btn btn-danger">Delete</a>
+                </td>
+            </div>
+        </div>
+
+
+    <%})%>
+
+    
+</div>
+
+
+
