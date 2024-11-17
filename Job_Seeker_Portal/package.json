@@ -1,0 +1,31 @@
+{
+  "name": "job_seeker_portal",
+  "version": "1.0.0",
+  "description": "\"Job Seeker Website\"",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "test": "jest",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/priyankaghorpade25/My_Project.git"
+  },
+  "author": "Priyanka Ghorpade",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/priyankaghorpade25/My_Project/issues"
+  },
+  "homepage": "https://github.com/priyankaghorpade25/My_Project#readme",
+  "dependencies": {
+    "cookie-parser": "^1.4.6",
+    "ejs": "^3.1.10",
+    "ejs-layouts": "^0.0.1",
+    "express": "^4.21.0",
+    "express-ejs-layouts": "^2.5.1",
+    "express-session": "^1.18.0",
+    "job_seeker_portal": "file:",
+    "nodemon": "^3.1.7"
+  }
+}

@@ -1,0 +1,67 @@
+<div class="container mt-5">
+  <h2>Post a New Job</h2>
+  <form action="/addjob" method="POST">
+
+    <div class="form-group">
+      <label for="designation">Job Category:</label>
+      <select name="category" id="category" class="form-control" required>
+          <option value="">Select Job Category</option>
+          <option value="Tech">Tech</option>
+          <option value="Non tech">Non tech</option>
+      </select>
+  </div>
+      <div class="form-group">
+          <label for="designation">Job Designation:</label>
+          <select name="designation" id="designation" class="form-control" required>
+              <option value="">Select Job Designation</option>
+              <option value="Software Engineer">Software Engineer</option>
+              <option value="Data Scientist">Data Scientist</option>
+              <option value="Product Manager">Product Manager</option>
+              <!-- Add more job designations as needed -->
+          </select>
+      </div>
+
+      <div class="form-group">
+          <label for="location">Job Location:</label>
+          <input type="text" name="location" id="location" class="form-control" required placeholder="Enter Job Location">
+      </div>
+
+      <div class="form-group">
+          <label for="companyName">Company Name:</label>
+          <input type="text" name="companyName" id="companyName" class="form-control" required placeholder="Enter Company Name">
+      </div>
+
+      <div class="form-group">
+          <label for="salary">Salary:</label>
+          <input type="number" name="salary" id="salary" class="form-control" required placeholder="Enter Salary">
+      </div>
+
+      <div class="form-group">
+          <label for="positions">Total Positions:</label>
+          <input type="number" name="positions" id="positions" class="form-control" required value="2" min="1">
+      </div>
+
+      <div class="form-group">
+          <label for="skills">Skills Required:</label>
+          <select name="skills" id="skills" class="form-control" multiple required>
+              <option value="React">React</option>
+              <option value="NodeJS">NodeJS</option>
+              <option value="Angular">Angular</option>
+              <option value="MongoDB">MongoDB</option>
+              <option value="SQL">SQL</option>
+              <option value="Express">Express</option>
+              <option value="Java">Java</option>
+              <option value="Spring Boot">Spring Boot</option>
+              <option value="C++">C++</option>
+              <option value="Data Structures & Algo">Data Structures & Algo</option>
+          </select>
+      </div>
+
+      <div class="form-group">
+          <label for="applyBy">Apply By:</label>
+          <input type="date" name="applyBy" id="applyBy" class="form-control" required>
+      </div>
+
+      <a href="/job" class="btn btn-warning">Post Job</a>
+  </form>
+</div>
